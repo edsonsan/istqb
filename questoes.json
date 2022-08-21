@@ -1,0 +1,26 @@
+{
+    "dado": [
+        {
+            "questao": 1,
+            "pergunta": "Qual das seguintes respostas descreve uma condiçao de teste?",
+            "alternativa":
+                {
+                    "opcaoA": "A",
+                    "respostas01": "Uma característica distinta de um componente ou sistema"
+                ,
+
+                    "opcaoB": "B",
+                    "respostas2": "Um aspecto testável de um componente ou sistema identificado como base para os testes"
+                ,
+
+                    "opcaoC": "C",
+                    "respostas3": "O grau em que um produto de software fornece funções que atendem as necessidades declaradas e implícitas quando o software e utilizado sob condiçoes específicas"
+                ,
+
+                    "opcaoD": "D",
+                    "respostas4": "Casos de teste projetados para executar combinações de condições e ações resultantes delas"
+                }
+
+        }
+    ]
+}
