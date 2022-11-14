@@ -2064,6 +2064,7 @@
                 }
             }
         // Fim do For
+        // Verifica se o canditado está aprovado ou reprovado
         porcentagem = 100-(((totalQuestoes-contaQuestao)/totalQuestoes)*100);
         document.getElementById("acerto").innerHTML=contaQuestao;
         document.getElementById("porcent").innerHTML="Porcentagem de Acerto "+porcentagem;
@@ -2078,6 +2079,7 @@
         }
         console.log("Total de acertos: " + contaQuestao); 
         }
+        // Fim da validação de Aprovação
     </script>
     <!-- Fim do JavaScript -->
 </body>
