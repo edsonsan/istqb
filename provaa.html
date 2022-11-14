@@ -20,14 +20,12 @@
             <p>BASEADO NO SYLLABUS 2018 v3.1 BR</p>
             <p></p>
             <p></p>
-            <hr />
+            <button onclick="respostaa()">Enviar</button>
+            <p></p>
             <p>Resultado</p>
-            <p style="text-align:left;">Acertos: <span id="acerto"></span></p>
-            <p id="porcent" style="text-align:left;"></p>
-            <br>
-            <p>Você está:</p>
-            <p id="condicao_aprovado" style="color: green;font-weight: bold;"> </p>
-            <p id="condicao_reprovado" style="color: red;font-weight: bold;"> </p>
+            <p>Acertos: <span id="acerto"></span></p>
+            <p id="porcent"></p>
+            <p id="condicao"></p>
 
 
         </div>
@@ -316,15 +314,17 @@
                     <tr>
                         <td colspan="3">
                             <h3>Questão 8</h3>
-                            <span>Combine os seguintes produtos de trabalho de teste (1-4) com a descrição correta (A-D).<br />
-                                &emsp;(1) Conjunto de teste<br />
-                                &emsp;(2) Caso de teste<br />
-                                &emsp;(3) Roteiro de teste<br />
-                                &emsp;(4) Carta de teste<br /><br/>
-                                &emsp;(a) Um conjunto de scripts de teste a serem executados em uma execução de teste específica<br />
-                                &emsp;(b) Um conjunto de instruço es para a execução de um teste<br />
-                                &emsp;(c) Contem os resultados esperados<br />
-                                &emsp;(d) Documentaça o das atividades de teste em testes exploratórios baseados em
+                            <span>Combine os seguintes produtos de trabalho de teste (1-4) com a descrição correta
+                                (A-D).<br />
+                                (1) Conjunto de teste<br />
+                                (2) Caso de teste<br />
+                                (3) Roteiro de teste<br />
+                                (4) Carta de teste<br />
+                                (a) Um conjunto de scripts de teste a serem executados em uma execução de teste
+                                específica<br />
+                                (b) Um conjunto de instruço es para a execução de um teste<br />
+                                (c) Contem os resultados esperados<br />
+                                (d) Documentaça o das atividades de teste em testes exploratórios baseados em
                                 sessões</span>
                         </td>
                     </tr>
@@ -674,26 +674,24 @@
                             do processo de criação de documentos internos.
                             O objetivo da descrição é apresentar a distribuição do trabalho entre os diferentes papéis
                             envolvidos no processo de uma forma que
-                            possa ser claramente compreendida por todos.<br>
-                            Você será convidado para uma revisão baseada em checklist. A lista de verificação também será enviada a você.
-                            Ela inclui os seguintes pontos:<br>
-                            &emsp;I. A pessoa que executa a atividade e claramente identificada para cada atividade?<br>
-                            &emsp;II. Os critérios de entrada estão claramente definidos para cada atividade?<br>
-                            &emsp;III. Os critérios de saída estão claramente definidos para cada atividade?<br>
-                            &emsp;IV. Os papéis de apoio e seu escopo de trabalho estão claramente definidos para cada
-                            atividade?
-                            <p></p>
+                            possa ser claramente compreendida por todos.
+                            Você será convidado para uma revisão baseada em checklist.<br>
+                            A lista de verificação também será enviada a voce .
+                            Ela inclui os seguintes pontos:
+                            I. A pessoa que executa a atividade e claramente identificada para cada atividade?
+                            II. Os critérios de entrada estão claramente definidos para cada atividade?
+                            III. Os critérios de saída estão claramente definidos para cada atividade?
+                            IV. Os papéis de apoio e seu escopo de trabalho estão claramente definidos para cada
+                            atividade?<br>
                             A seguir mostramos um trecho do resultado do trabalho a ser revisto,para o Qual voce deve
-                            utilizar a lista de verificação acima:<br>
-                            <p></p>
-                            <i>"Depois de verificar a documentaçao do cliente para verificar se está completa e correta, o
-                            arquiteto do software cria a especificaçao do sistema".</i>
-                            <p></p>
+                            utilizar a lista de verificação acima:
+                            "Depois de verificar a documentaçao do cliente para verificar se está completa e correta, o
+                            arquiteto do software cria a especificaçao do sistema".
                             Uma vez que o arquiteto de software tenha concluído a especificação do sistema, ele convida
                             os testadores e verificadores
                             para a revisão. Uma lista de verificação descreve o escopo da revisão. Cada revisor
                             convidado cria comentários de revisão
-                            - se necessário - e conclui a revisão com um comentário oficial de revisão".<br>
+                            - se necessário - e conclui a revisão com um comentário oficial de revisão".
                             Qual das seguintes declarações sobre sua revisão é correta?
                         </span>
                     </td>
@@ -801,12 +799,10 @@
                     <td colspan="3">
                         <h3>Questão 21</h3>
                         <span>A seguinte declareção se refere a cobertura de decisões:
-                            <p></p>
-                            <i>"Quando o código contém apenas uma única declaraçao 'se' e sem loops ou declarações CASE, e
+                            "Quando o código contém apenas uma única declaraçao 'se' e sem loops ou declarações CASE, e
                             sua execuçao não está aninhada dentro do teste, qualquer caso de
-                            teste único que executarmos resultará em 50% de cobertura de decisão".</i>
-                            <p></p>
-                            Qual das seguintes afirmações e correta?<br>
+                            teste único que executarmos resultará em 50% de cobertura de decisão".
+                            Qual das seguintes afirmações e correta?
                         </span>
                     </td>
                     <tr>
@@ -941,15 +937,12 @@
                     <td colspan="3">
                         <h3>Questão 25</h3>
                         <span> O bônus de um funcionário deve ser calculado. Não pode ser negativo, mas pode ser
-                            calculado até zero. O bônus e baseado na duração do emprego:<br>
-                            <ul>
-                                <li>menor ou igual a 2 anos</li>
-                                <li>mais de 2 anos, mas menos de 5 anos</li>
-                                <li>5 a 10 anos, inclusive</li>
-                                <li>mais de 10 anos</li>
-                            </ul>
-                            <p></p>
-                            Qual e o número mínimo de casos de teste necessário para cobrir todas as partições de
+                            calculado ate zero. O bônus e baseado na duração do emprego:
+                            • menor ou igual a 2 anos
+                            • mais de 2 anos, mas menos de 5 anos
+                            • 5 a 10 anos, inclusive
+                            • mais de 10 anos
+                            Qual e o número mí nimo de casos de teste necessário para cobrir todas as partições de
                             equivalência válidas para o cálculo do bônus?
                         </span>
                     </td>
@@ -981,21 +974,16 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 26</h3>
-                        <span>Um sistema de controle de velocidade e relatórios tem as seguintes características:</span>
-                            <p></p>
-                            <ul>
-                                <li>Se você dirigir 50 km/h ou menos, nada vai acontecer.</li>
-                                <li>Se você dirigir mais rápido que 50 km/h, mas não mais que 55 km/h, você será avisado.</li>
-                                <li>Se você dirigir mais rápido que 55 km/h, mas não mais que 60 km/h, você será multado.</li>
-                                <li>Se você dirigir a mais de 60 km/h, sua carteira de habilitaçao será suspensa. - A
-                                    velocidade em km/h está disponível para o sistema como um valor inteiro.</li>
-                            </ul>
-                            <p>
+                        <span>Um sistema de controle de velocidade e relatórios tem as seguintes características:
+                            • Se você dirigir 50 km/h ou menos, nada vai acontecer.
+                            • Se você dirigir mais rápido que 50 km/h, mas não mais que 55 km/h, você será avisado.
+                            • Se você dirigir mais rápido que 55 km/h, mas não mais que 60 km/h, você será multado.
+                            • Se você dirigir a mais de 60 km/h, sua carteira de habilitaçao será suspensa. - A
+                            velocidade em km/h está disponível para o sistema como um valor inteiro.
                             Qual seria o conjunto mais provável de valores (km/h) identificado pela aplicação da análise
                             de valores limite, onde apenas os valores nos limites das classes de
                             equivalência são selecionados?
-                        </p>
-                        
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="26A" value="a" /> </td>
@@ -1026,32 +1014,39 @@
                     <td colspan="3">
                         <h3>Questão 27</h3>
                         <span>Os funcionários de uma empresa recebem bônus se trabalharem mais de um ano na empresa e
-                            atingirem uma meta que tenha sido acordada individualmente antes.</span>
-                        <p>Estes fatos podem ser mostrados em uma tabela de decisão:</p>
-                        <img src="tabela q27.png" style="width:880px;height:150px"><br>
-                        <p>Qual dos seguintes casos de teste representa uma situação que pode acontecer na vida real, e
-                            está faltando na tabela de decisão acima?</p>
-                        
+                            atingirem uma meta que tenha sido acordada individualmente antes.
+                            Estes fatos podem ser mostrados em uma tabela de decisão:
+                            [ tabela pg8]
+                            /*
+                            Test-ID T1 T2 T3 T4
+                            condição 1 Emprego por mais de 1 ano? YES NO NO YES
+                            condição 2 Objetivo acordado? NO NO YES YES
+                            condição 3 Alcançado o objetivo? NO NO YES YES
+                            Aça o Pagamento de bônus NO NO NO YES
+                            */
+                            Qual dos seguintes casos de teste representa uma situação que pode acontecer na vida real, e
+                            está faltando na tabela de decisão acima?
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="27A" value="a" /> </td>
                         <td>A)</td>
-                        <td>condição1 = SIM, condição2 = não, Condição3 = SIM, Ação = NÃO</td>
+                        <td>condição1 = SIM, condição2 = não, Condição3 = SIM, Ação = não</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="27A" value="b" /> </td>
                         <td>B)</td>
-                        <td>condição1 = SIM, condição2 = SIM, Condição3 = NÃO, Ação = SIM</td>
+                        <td>condição1 = SIM, condição2 = SIM, Condição3 = não, Ação = SIM</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="27A" value="c" /> </td>
                         <td>C)</td>
-                        <td>condição1 = não, condição2 = não, Condição3 = SIM, Ação= NÃO</td>
+                        <td>condição1 = não, condição2 = não, Condição3 = SIM, Ação= não</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="27A" value="d" /></td>
                         <td>D)</td>
-                        <td>condição1 = não, condição2 = SIM, Condição3 = NÃO, Ação= NÃO</td>
+                        <td>condição1 = não, condição2 = SIM, Condição3 = não, Ação= não</td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -1062,10 +1057,14 @@
                     <td colspan="3">
                         <h3>Questão 28</h3>
                         <span>Qual das seguintes afirmações sobre o diagrama de transição de estado dado e tabela de
-                            casos de teste é VERDADEIRA?</span><br>
-                        <p style="text-align-last:center;">
-                        <img src="diagrama q28_01.png" style="height:350px;width:700px;">
-                        </p>
+                            casos de teste é VERDADEIRA?
+                            [figura pg 9]
+
+                            Caso de Teste 1 2 3 4 5
+                            Estado inicial S1 S2 S2 S3 S3
+                            Entrada Power On Power Off RC On RC Off Power Off
+                            saída esperada S2 S1 S3 S2 S1
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="28A" value="a" /> </td>
@@ -1100,15 +1099,15 @@
                     <td colspan="3">
                         <h3>Questão 29</h3>
                         <span>Uma aplicação de vídeo tem a seguinte exigência: O aplicativo deve permitir a reprodução
-                            de um vídeo na seguinte resoluça o de tela:</span><br>
-                            <ul>
-                                <li>640x480</li>
-                                <li>1280x720</li>
-                                <li>1600x1200</li>
-                                <li>1920x1080</li>
-                            </ul>
-                            <p>Qual dos seguintes casos de teste e resultado da aplicação da técnicade teste de
-                            equivalência de partição para testar este requisito?</p>
+                            de um vídeo na seguinte
+                            resoluça o de tela:
+                            • 640x480
+                            • 1280x720
+                            • 1600x1200
+                            • 1920x1080
+                            Qual dos seguintes casos de teste e resultado da aplicação da técnicade teste de
+                            equivalência de partição para testar este requisito?
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="29A" value="a" /> </td>
@@ -1307,19 +1306,20 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 35</h3>
-                        <p>O projeto desenvolve um termostato de aquecimento "inteligente". Os algoritmos de controle
-                            do termostato foram modelados como modelos Matlab/Simulink e executados no servidor conectado a Internet. 
-                            O termostato usa as especificações do servidor para acionar as valvulas de aquecimento.</p>
-                        <p>O gerente de teste definiu a seguinte estratégia/abordagem de teste no plano de teste:</p>
-                        <ol>
-                            <li>O teste de aceite para todo o sistema e executado como um teste baseado na experiência.</li>
-                            <li>Os algoritmos de controle no servidor são verificados em relação padrão do regulamento de
-                                economia de energia.</li>
-                            <li>O teste funcional do termostato e executado como um teste baseado em risco.</li>
-                            <li>Os testes de segurança de dados/comunicação via internet são executados em conjunto com
-                                especialistas externos em segurança.</li>
-                        </ol>
-                        <p>Que quatro tipos comuns de estratégias/abordagens de teste o gerente de testes implementou no plano de teste?</p>
+                        <span>O projeto desenvolve um termostato de aquecimento "inteligente". Os algoritmos de controle
+                            do termostato foram modelados como modelos Matlab/Simulink e
+                            executados no servidor conectado a Internet. O termostato usa as especificações do servidor
+                            para acionar as valvulas de aquecimento.
+                            O gerente de teste definiu a seguinte estratÉgia/abordagem de teste no plano de teste:
+                            1. O teste de aceite para todo o sistema e executado como um teste baseado na experiência.
+                            2. Os algoritmos de controle no servidor são verificados em relação padrão do regulamento de
+                            economia de energia.
+                            3. O teste funcional do termostato e executado como um teste baseado em risco.
+                            4. Os testes de segurança de dados/comunicação via internet são executados em conjunto com
+                            especialistas externos em segurança.
+                            Que quatro tipos comuns de estratégias/abordagens de teste o gerente de testes implementou
+                            no plano de teste?
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="35A" value="a" /> </td>
@@ -1381,26 +1381,20 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 37</h3>
-                        <span>Como gerente de testes, voce e responsável por testar as seguintes partes dos requisitos:</span>
-                        <table>
-                            <tr>
-                                <td><ul>
-                                        <li>R1 - Anomalias de processo</li>
-                                        <li>R2 - Sincronizaçao</li>
-                                        <li>R3 - Aprovaçao</li>
-                                        <li>R4 - Soluçao de problemas</li>
-                                        <li>R5 - Dados financeiros</li>
-                                        <li>R6 - Dados do diagrama</li>
-                                        <li>R7 - Mudanças no perfil do usuário</li>
-                                    </ul>
-                                    Notação: Dependências de requisitos lógicos (A -> B significa que B depende de A):
-                                </td>
-                                <td><p style="text-align:center;"><img src="img q37.png" style="height:280px;width:400px;" /></p></td>
-                            </tr>
-                        </table>
-                        <P>Qual das seguintes opções estrutura o cronograma de execução de testes de acordo com as
-                            Dependências de requisitos?</P>
-                        
+                        <span>Como gerente de testes, voce e responsável por testar as seguintes partes dos requisitos:
+
+                            [figura pg 11]
+                            • R1 - Anomalias de processo
+                            • R2 - Sincronizaçao
+                            • R3 - Aprovaçao
+                            • R4 - Soluçao de problemas
+                            • R5 - Dados financeiros
+                            • R6 - Dados do diagrama
+                            • R7 - Mudanças no perfil do usuário
+                            Notação: Dependências de requisitos lógicos (A -> B significa que B depende de A):
+                            Qual das seguintes opções estrutura o cronograma de execução de testes de acordo com as
+                            Dependências de requisitos?
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="37A" value="a" /> </td>
@@ -1430,26 +1424,23 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 38</h3>
-                        <span>Você esta testando uma nova versão de software para uma máquina de cafe . A máquina pode
-                            preparar diferentes tipos de cafe com base em quatro categorias, ou sejá, tamanho do cafe, açúcar, leite e xarope. Os
-                            critérios são os seguintes:</span><br>
-                        <ul>
-                            <li>Tamanho do café (pequeno, médio, grande)</li>
-                            <li>Açúcar (nenhum, 1 unidade, 2 unidades, 3 unidades, 4 unidades)</li>
-                            <li>Leite (sim ou não)</li>
-                            <li>xarope de sabor café (sem xarope, caramelo, avela, baunilha)</li>
-                        </ul>
-                        <p>Agora voce esta escrevendo um relatório de defeito com as seguintes informações:</p>
-                        <ul>
-                            <li>Título: Baixa temperatura do café.</li>
-                            <li>Breve resumo: Quando você seleciona café com leite, o tempo para preparar o café é muito
-                                longo e a temperatura da bebida é muito baixa (menos de 40 °C).</li>
-                            <li>Resultado esperado: A temperatura do café deve ser padrão (cerca de 75°C).</li>
-                            <li>Grau de risco: Médio</li>
-                            <li>Prioridade: Normal</li>
-
-                        </ul>
-                        <p>Que informações valiosas foram omitidas no relatório de defeitos acima?</p>
+                        <span>Você esta testando uma nova versão de software para uma máquina de cafe . A ma quina pode
+                            preparar diferentes tipos
+                            de cafe com base em quatro categorias, ou sejá, tamanho do cafe, açúcar, leite e xarope. Os
+                            critérios são os seguintes:
+                            • Tamanho do café (pequeno, médio, grande)
+                            • Açúcar (nenhum, 1 unidade, 2 unidades, 3 unidades, 4 unidades)
+                            • Leite (sim ou não)
+                            • xarope de sabor café (sem xarope, caramelo, avela, baunilha)
+                            Agora voce esta escrevendo um relatório de defeito com as seguintes informações:
+                            • Título: Baixa temperatura do café.
+                            • Breve resumo: Quando você seleciona café com leite, o tempo para preparar o café é muito
+                            longo e a temperatura da bebida é muito baixa (menos de 40 °C).
+                            • Resultado esperado: A temperatura do café deve ser padrão (cerca de 75°C).
+                            • Grau de risco: Médio
+                            • Prioridade: Normal
+                            Que informações valiosas foram omitidas no relatório de defeitos acima?
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="38A" value="a" /> </td>
@@ -1537,9 +1528,10 @@
                     </tr>
                     <!-- ------------------------------------------------ -->
                 </table>
+
                 <p>&nbsp;</p>
             </form>
-            <!-- Botão que executa a rotina de aprovação-->
+
             <button onclick="respostaa()">Enviar</button>
         </div><!-- Fim das Questões-->
         <!-- Início do Gabarito-->
@@ -1951,142 +1943,180 @@
             
                 if(i == 0 && conjuntResultado[i]=="b"){
                     contaQuestao = contaQuestao+1;    
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 1 && conjuntResultado[i]=="b"){ 
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 2 && conjuntResultado[i]=="b"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 3 && conjuntResultado[i]=="a"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 4 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 5 && conjuntResultado[i]=="b"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 6 && conjuntResultado[i]=="d"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 7 && conjuntResultado[i]=="a"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 8 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 9 && conjuntResultado[i]=="b"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 10 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 11 && conjuntResultado[i]=="a"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 12 && conjuntResultado[i]=="a"){
                     contaQuestao = contaQuestao+1;    
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 13 && conjuntResultado[i]=="d"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 14 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 15 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 16 && conjuntResultado[i]=="a"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 17 && conjuntResultado[i]=="d"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 18 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 19 && conjuntResultado[i]=="d"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 20 && conjuntResultado[i]=="b"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 21 && conjuntResultado[i]=="b"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 22 && conjuntResultado[i]=="a"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 23 && conjuntResultado[i]=="c"){
                     contaQuestao = contaQuestao+1;
+                    console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 24 && conjuntResultado[i]=="d"){
                    contaQuestao = contaQuestao+1;    
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 25 && conjuntResultado[i]=="d"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 26 && conjuntResultado[i]=="d"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 27 && conjuntResultado[i]=="b"){
                   contaQuestao = contaQuestao+1;
+                  console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 28 && conjuntResultado[i]=="c"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 29 && conjuntResultado[i]=="b"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 30 && conjuntResultado[i]=="a"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 31 && conjuntResultado[i]=="a"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 32 && conjuntResultado[i]=="a"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 33 && conjuntResultado[i]=="a"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 34 && conjuntResultado[i]=="b"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 35 && conjuntResultado[i]=="a"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 36 && conjuntResultado[i]=="c"){
                    contaQuestao = contaQuestao+1;    
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 37 && conjuntResultado[i]=="b"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 38 && conjuntResultado[i]=="d"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
                 if(i == 39 && conjuntResultado[i]=="c"){
                    contaQuestao = contaQuestao+1;
+                   console.log("Questão "+(1+i) +" : " + conjuntResultado[i]);
                 }
+
             }
-            // Fim do For
-            // Verifica se o canditado está aprovado ou reprovado
-            porcentagem = 100-(((totalQuestoes-contaQuestao)/totalQuestoes)*100);
-            document.getElementById("acerto").innerHTML=contaQuestao;
-            document.getElementById("porcent").innerHTML="Porcentagem de Acerto "+porcentagem;
-            if(porcentagem >= 80){
-                situacao = "Aprovado";
-                document.getElementById("condicao_aprovado").innerHTML=situacao;
-                document.getElementById("condicao_reprovado").innerHTML="";
-            } else{
-                situacao = "Reprovado";
-                document.getElementById("condicao_reprovado").innerHTML=situacao;
-                document.getElementById("condicao_aprovado").innerHTML="";
-            }
-            console.log("Total de acertos: " + contaQuestao); 
+        // Fim do For
+        porcentagem = 100-(((totalQuestoes-contaQuestao)/totalQuestoes)*100);
+        document.getElementById("acerto").innerHTML=contaQuestao;
+        document.getElementById("porcent").innerHTML="Porcentagem de Acerto "+porcentagem;
+        if(porcentagem >= 80){
+            situacao = "Aprovado"
+        } else{
+            situacao = "Reprovado"
         }
-            // Fim da validação de Aprovação
+        document.getElementById("condicao").innerHTML="Você está: "+situacao;
+        console.log("Total de acertos: " + contaQuestao); 
+        console.log("Resposta 4 " + r4);
+        console.log("Resposta 5 " + r5);
+        }
     </script>
     <!-- Fim do JavaScript -->
 </body>
