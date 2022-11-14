@@ -23,7 +23,10 @@
             <p>Resultado</p>
             <p>Acertos: <span id="acerto"></span></p>
             <p id="porcent"></p>
-            <p id="condicao"></p>
+            <br>
+            Você está:
+            <p id="condicao_aprovado" style="color: green ;"> </p>
+            <p id="condicao_reprovado" style="color: red ;"> </p>
 
 
         </div>
@@ -2065,11 +2068,14 @@
         document.getElementById("acerto").innerHTML=contaQuestao;
         document.getElementById("porcent").innerHTML="Porcentagem de Acerto "+porcentagem;
         if(porcentagem >= 80){
-            situacao = "Aprovado"
+            situacao = "Aprovado";
+            document.getElementById("condicao_aprovado").innerHTML=situacao;
+            document.getElementById("condicao_reprovado").innerHTML="";
         } else{
-            situacao = "Reprovado"
+            situacao = "Reprovado";
+            document.getElementById("condicao_reprovado").innerHTML=situacao;
+            document.getElementById("condicao_aprovado").innerHTML="";
         }
-        document.getElementById("condicao").innerHTML="Você está: "+situacao;
         console.log("Total de acertos: " + contaQuestao); 
         }
     </script>
