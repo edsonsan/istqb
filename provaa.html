@@ -1942,13 +1942,15 @@
                 console.log("você não respondeu "+questNaoRespondidas[i]);
             }
             // Pop-UP informando as Questões não respondidas
-            if(questNaoRespondidas.length >=0){
+            if(questNaoRespondidas.length >0){
+                alerta = window.open("","Alerta","width=400,height=245"); 
+                alerta.close();
                 alerta = window.open("","Alerta","width=400,height=245"); 
                 alerta.document.writeln("Você não respondeu as questões ");
-                alerta.document.write('<div style="witdh: 100px; height=50px">');
+                //alerta.document.write('<div style="witdh: 100px; height=50px">');
                 alerta.document.write('<p style="font-size: 20px;">');
                 for(i=0;i<questNaoRespondidas.length;i++){
-                    if(i<38){
+                    if(i<39){
                     alerta.document.writeln(" "+questNaoRespondidas[i]+" - ");
                     } else{
                         alerta.document.writeln(" "+questNaoRespondidas[i]+" ");
@@ -1956,8 +1958,10 @@
                 }
                 alerta.document.write("</p>");
                 alerta.document.write('<p style="color: red;"> Retorne e marque as quetões! </p>')
-                alerta.document.write('</div>');
+                //alerta.document.write('</div>');
             }else{
+                alerta = window.open("","Alerta","width=400,height=245"); 
+                alerta.close();
             // Fim das atribuições das variáveis auxiliares
                 for (var i = 0; i<40; i++){
                     if(i == 0 && conjuntResultado[i]=="b"){
