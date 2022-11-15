@@ -9,7 +9,7 @@
     <title>Simulado A</title>
 </head>
 
-<body style="overflow:auto ;">
+<body style="overflow:auto;">
     <div>
         <div style="border:2px black solid; padding:5px; text-align:center;
                 float:left; margin:0px 5px;height: 580px;width: 230px">
@@ -28,8 +28,6 @@
             <p>Você está:</p>
             <p id="condicao_aprovado" style="color: green;font-weight: bold;"> </p>
             <p id="condicao_reprovado" style="color: red;font-weight: bold;"> </p>
-
-
         </div>
         <!-- Início das Questões-->
         <div style="float:left;border: 2px solid blue;width: 910px;
@@ -1897,195 +1895,196 @@
     <!-- Início do JavaScript -->
     <script>
         function respostaa(){
+            console.clear();
             // Criando as váriáveis que receberão os valores das respostas;
-            let r1 = document.querySelector('input[name="1A"]:checked').value;
-            let r2 = document.querySelector('input[name="2A"]:checked').value;
-            let r3 = document.querySelector('input[name="3A"]:checked').value;
-            let r4 = document.querySelector('input[name="4A"]:checked').value;
-            let r5 = document.querySelector('input[name="5A"]:checked').value;
-            let r6 = document.querySelector('input[name="6A"]:checked').value;
-            let r7 = document.querySelector('input[name="7A"]:checked').value;
-            let r8 = document.querySelector('input[name="8A"]:checked').value;
-            let r9 = document.querySelector('input[name="9A"]:checked').value;
-            let r10 = document.querySelector('input[name="10A"]:checked').value;
-            let r11 = document.querySelector('input[name="11A"]:checked').value;
-            let r12 = document.querySelector('input[name="12A"]:checked').value;
-            let r13 = document.querySelector('input[name="13A"]:checked').value;
-            let r14 = document.querySelector('input[name="14A"]:checked').value;
-            let r15 = document.querySelector('input[name="15A"]:checked').value;
-            let r16 = document.querySelector('input[name="16A"]:checked').value;
-            let r17 = document.querySelector('input[name="17A"]:checked').value;
-            let r18 = document.querySelector('input[name="18A"]:checked').value;
-            let r19 = document.querySelector('input[name="19A"]:checked').value;
-            let r20 = document.querySelector('input[name="20A"]:checked').value;
-            let r21 = document.querySelector('input[name="21A"]:checked').value;
-            let r22 = document.querySelector('input[name="22A"]:checked').value;
-            let r23 = document.querySelector('input[name="23A"]:checked').value;
-            let r24 = document.querySelector('input[name="24A"]:checked').value;
-            let r25 = document.querySelector('input[name="25A"]:checked').value;
-            let r26 = document.querySelector('input[name="26A"]:checked').value;
-            let r27 = document.querySelector('input[name="27A"]:checked').value;
-            let r28 = document.querySelector('input[name="28A"]:checked').value;
-            let r29 = document.querySelector('input[name="29A"]:checked').value;
-            let r30 = document.querySelector('input[name="30A"]:checked').value;
-            let r31 = document.querySelector('input[name="31A"]:checked').value;
-            let r32 = document.querySelector('input[name="32A"]:checked').value;
-            let r33 = document.querySelector('input[name="33A"]:checked').value;
-            let r34 = document.querySelector('input[name="34A"]:checked').value;
-            let r35 = document.querySelector('input[name="35A"]:checked').value;
-            let r36 = document.querySelector('input[name="36A"]:checked').value;
-            let r37 = document.querySelector('input[name="37A"]:checked').value;
-            let r38 = document.querySelector('input[name="38A"]:checked').value;
-            let r39 = document.querySelector('input[name="39A"]:checked').value;
-            let r40 = document.querySelector('input[name="40A"]:checked').value;
+            let r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+                r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,r31,r32,r33,r34,r35,r36,r37,r38,r39,r40="";
+            let seletores =['input[name="1A"]:checked','input[name="2A"]:checked','input[name="3A"]:checked',
+                            'input[name="4A"]:checked','input[name="5A"]:checked','input[name="6A"]:checked',
+                            'input[name="7A"]:checked','input[name="8A"]:checked','input[name="9A"]:checked',
+                            'input[name="10A"]:checked','input[name="11A"]:checked','input[name="12A"]:checked',
+                            'input[name="13A"]:checked','input[name="14A"]:checked','input[name="15A"]:checked',
+                            'input[name="16A"]:checked','input[name="17A"]:checked','input[name="18A"]:checked',
+                            'input[name="19A"]:checked','input[name="20A"]:checked','input[name="21A"]:checked',
+                            'input[name="22A"]:checked','input[name="23A"]:checked','input[name="24A"]:checked',
+                            'input[name="25A"]:checked','input[name="26A"]:checked','input[name="27A"]:checked',
+                            'input[name="28A"]:checked','input[name="29A"]:checked','input[name="30A"]:checked',
+                            'input[name="31A"]:checked','input[name="32A"]:checked','input[name="33A"]:checked',
+                            'input[name="34A"]:checked','input[name="35A"]:checked','input[name="36A"]:checked',
+                            'input[name="37A"]:checked','input[name="38A"]:checked','input[name="39A"]:checked',
+                            'input[name="40A"]:checked'];
             //Fim das atribuições
             // Inícios das variáveis auxiliares
             let contaQuestao = 0;
             let conjuntResultado = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-                                r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,r31,r32,r33,r34,r35,r36,r37,r38,r39,r40];
+                                   r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,r31,r32,r33,r34,r35,r36,r37,r38,r39,r40];
             let porcentagem =0;
+            let numeroQuestoes=["1A","2A","3A","4A","5A","6A","7A","8A","9A","10A",
+                                "11A","12A","13A","14A","15A","16A","17A","18A","19A","20A",
+                                "21A","22A","23A","24A","25A","26A","27A","28A","29A","30A",
+                                "31A","32A","33A","34A","35A","36A","37A","38A","39A","40A",];
+            let questNaoRespondidas = [];
             let situacao="";
             let totalQuestoes=40;
-            // Fim das atribuições das variáveis auxiliares
-            for (var i = 0; i<40; i++){
-            
-                if(i == 0 && conjuntResultado[i]=="b"){
-                    contaQuestao = contaQuestao+1;    
-                }
-                if(i == 1 && conjuntResultado[i]=="b"){ 
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 2 && conjuntResultado[i]=="b"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 3 && conjuntResultado[i]=="a"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 4 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 5 && conjuntResultado[i]=="b"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 6 && conjuntResultado[i]=="d"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 7 && conjuntResultado[i]=="a"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 8 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 9 && conjuntResultado[i]=="b"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 10 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 11 && conjuntResultado[i]=="a"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 12 && conjuntResultado[i]=="a"){
-                    contaQuestao = contaQuestao+1;    
-                }
-                if(i == 13 && conjuntResultado[i]=="d"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 14 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 15 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 16 && conjuntResultado[i]=="a"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 17 && conjuntResultado[i]=="d"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 18 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 19 && conjuntResultado[i]=="d"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 20 && conjuntResultado[i]=="b"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 21 && conjuntResultado[i]=="b"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 22 && conjuntResultado[i]=="a"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 23 && conjuntResultado[i]=="c"){
-                    contaQuestao = contaQuestao+1;
-                }
-                if(i == 24 && conjuntResultado[i]=="d"){
-                   contaQuestao = contaQuestao+1;    
-                }
-                if(i == 25 && conjuntResultado[i]=="d"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 26 && conjuntResultado[i]=="d"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 27 && conjuntResultado[i]=="b"){
-                  contaQuestao = contaQuestao+1;
-                }
-                if(i == 28 && conjuntResultado[i]=="c"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 29 && conjuntResultado[i]=="b"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 30 && conjuntResultado[i]=="a"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 31 && conjuntResultado[i]=="a"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 32 && conjuntResultado[i]=="a"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 33 && conjuntResultado[i]=="a"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 34 && conjuntResultado[i]=="b"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 35 && conjuntResultado[i]=="a"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 36 && conjuntResultado[i]=="c"){
-                   contaQuestao = contaQuestao+1;    
-                }
-                if(i == 37 && conjuntResultado[i]=="b"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 38 && conjuntResultado[i]=="d"){
-                   contaQuestao = contaQuestao+1;
-                }
-                if(i == 39 && conjuntResultado[i]=="c"){
-                   contaQuestao = contaQuestao+1;
+            // Verificando se há respostas em branco
+            for(var i=0;i<40;i++){
+                try {
+                    conjuntResultado[i]=document.querySelector(seletores[i]).value;
+                } 
+                catch(e) {
+                        console.log("excessão");
+                        questNaoRespondidas.push(numeroQuestoes[i]);
                 }
             }
+            for(i=0;i<=conjuntResultado.length;i++){
+                console.log("você respondeu "+conjuntResultado[i]);
+            }
+            for(i=0;i<=questNaoRespondidas.length;i++){
+                console.log("você não respondeu "+questNaoRespondidas[i]);
+            }
+            if(questNaoRespondidas.length>0){
+
+            }else{
+            // Fim das atribuições das variáveis auxiliares
+                for (var i = 0; i<40; i++){
+                    if(i == 0 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;    
+                    }
+                    if(i == 1 && conjuntResultado[i]=="b"){ 
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 2 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 3 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 4 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 5 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 6 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 7 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 8 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 9 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 10 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 11 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 12 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;    
+                    }
+                    if(i == 13 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 14 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 15 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 16 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 17 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 18 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 19 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 20 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 21 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 22 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 23 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 24 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;    
+                    }
+                    if(i == 25 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 26 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 27 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 28 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 29 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 30 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 31 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 32 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 33 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 34 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 35 && conjuntResultado[i]=="a"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 36 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;    
+                    }
+                    if(i == 37 && conjuntResultado[i]=="b"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 38 && conjuntResultado[i]=="d"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                    if(i == 39 && conjuntResultado[i]=="c"){
+                        contaQuestao = contaQuestao+1;
+                    }
+                }
             // Fim do For
             // Verifica se o canditado está aprovado ou reprovado
-            porcentagem = 100-(((totalQuestoes-contaQuestao)/totalQuestoes)*100);
-            document.getElementById("acerto").innerHTML=contaQuestao;
-            document.getElementById("porcent").innerHTML="Porcentagem de Acerto "+porcentagem;
-            if(porcentagem >= 80){
-                situacao = "Aprovado";
-                document.getElementById("condicao_aprovado").innerHTML=situacao;
-                document.getElementById("condicao_reprovado").innerHTML="";
-            } else{
-                situacao = "Reprovado";
-                document.getElementById("condicao_reprovado").innerHTML=situacao;
-                document.getElementById("condicao_aprovado").innerHTML="";
+                porcentagem = 100-(((totalQuestoes-contaQuestao)/totalQuestoes)*100);
+                document.getElementById("acerto").innerHTML=contaQuestao;
+                document.getElementById("porcent").innerHTML="Porcentagem de Acerto "+porcentagem;
+                if(porcentagem >= 80){
+                    situacao = "Aprovado";
+                    document.getElementById("condicao_aprovado").innerHTML=situacao;
+                    document.getElementById("condicao_reprovado").innerHTML="";
+                } else{
+                    situacao = "Reprovado";
+                    document.getElementById("condicao_reprovado").innerHTML=situacao;
+                    document.getElementById("condicao_aprovado").innerHTML="";
+                }
+                console.log("Total de acertos: " + contaQuestao); 
             }
-            console.log("Total de acertos: " + contaQuestao); 
-        }
+    }
             // Fim da validação de Aprovação
     </script>
     <!-- Fim do JavaScript -->
