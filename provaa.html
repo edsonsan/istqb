@@ -1538,7 +1538,7 @@
                 <p>&nbsp;</p>
             </form>
             <!-- Botão que executa a rotina de aprovação-->
-            <button onclick="respostaa()">Enviar</button>
+            <button onclick="respostaa()" id="botao" >Enviar</button>
         </div><!-- Fim das Questões-->
         <!-- Início do Gabarito-->
         <div style="float:right;border: 2px solid black;width: 140px;height: 590px;overflow-y:scroll;">
@@ -1935,14 +1935,28 @@
                         questNaoRespondidas.push(numeroQuestoes[i]);
                 }
             }
-            for(i=0;i<=conjuntResultado.length;i++){
+            for(i=0;i<conjuntResultado.length;i++){
                 console.log("você respondeu "+conjuntResultado[i]);
             }
-            for(i=0;i<=questNaoRespondidas.length;i++){
+            for(i=0;i<questNaoRespondidas.length;i++){
                 console.log("você não respondeu "+questNaoRespondidas[i]);
             }
-            if(questNaoRespondidas.length>0){
-
+            // Pop-UP informando as Questões não respondidas
+            if(questNaoRespondidas.length >=0){
+                alerta = window.open("","Alerta","width=400,height=245"); 
+                alerta.document.writeln("Você não respondeu as questões ");
+                alerta.document.write('<div style="witdh: 100px; height=50px">');
+                alerta.document.write('<p style="font-size: 20px;">');
+                for(i=0;i<questNaoRespondidas.length;i++){
+                    if(i<38){
+                    alerta.document.writeln(" "+questNaoRespondidas[i]+" - ");
+                    } else{
+                        alerta.document.writeln(" "+questNaoRespondidas[i]+" ");
+                    }
+                }
+                alerta.document.write("</p>");
+                alerta.document.write('<p style="color: red;"> Retorne e marque as quetões! </p>')
+                alerta.document.write('</div>');
             }else{
             // Fim das atribuições das variáveis auxiliares
                 for (var i = 0; i<40; i++){
@@ -2081,6 +2095,7 @@
                     document.getElementById("condicao_reprovado").innerHTML=situacao;
                     document.getElementById("condicao_aprovado").innerHTML="";
                 }
+                document.getElementById("botao").disabled=true;
                 console.log("Total de acertos: " + contaQuestao); 
             }
     }
