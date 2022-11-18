@@ -601,7 +601,8 @@
                     <td colspan="3">
                         <h3>Questão 16</h3>
                         <span>Qual das seguintes funções e responsabilidades se encaixa CORRETAMENTE em uma 
-                            revisão formal?</span>
+                            revisão formal?
+                        </span>
                     </td>
                     <tr>
                         <td><input type="radio" name="16A" value="a" /> </td>
@@ -649,7 +650,8 @@
                         <td>A)</td>
                         <td>Revisão Informal</td>
                     </tr>
-                    <td><input type="radio" name="17A" value="b" /> </td>
+                    <td><input type="radio" name="17A" value="b" /> 
+                    </td>
                     <td>B)</td>
                     <td>Caminhada</td>
                     </tr>
@@ -769,8 +771,8 @@
                             &emsp;(1)&emsp; A cobertura é medida com base em uma estrutura selecionada do objeto de teste<br>
                             &emsp;(2)&emsp;	O processamento dentro do objeto de teste é verificado<br>
                             &emsp;(3)&emsp;	Os testes são baseados na probabilidade de defeitos e sua distribuição<br>
-                            &emsp;(4)&emsp;	Os desvios das exigências são verificados
-                            &emsp;(5)&emsp;	As histórias de usuários são usadas como base de teste 
+                            &emsp;(4)&emsp;	Os desvios das exigências são verificados<br>
+                            &emsp;(5)&emsp;	As histórias de usuários são usadas como base de teste <br>
                         </p>
                         <p>Usando notação para as 4 opções a seguir:</p>
                         <p>
@@ -807,38 +809,34 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 21</h3>
-                        <span>A seguinte declareção se refere a cobertura de decisões:
-                            <p></p>
-                            <i>"Quando o código contém apenas uma única declaraçao 'se' e sem loops ou declarações CASE, e
-                            sua execuçao não está aninhada dentro do teste, qualquer caso de
-                            teste único que executarmos resultará em 50% de cobertura de decisão".</i>
-                            <p></p>
-                            Qual das seguintes afirmações e correta?<br>
-                        </span>
+                        <span>Um aplicativo de fitness mede o número de etapas que são percorridas a cada dia e fornece feedback 
+                            para encorajar o usuário a manter-se em forma.
+                        </span>                        
+                            <p>O feedback para diferentes números de etapas deve ser:</p>
+                            <p style="text-align:center;">
+                                <img src="questaoB21.png">
+                            </p>
+                            <p>Qual dos seguintes conjuntos de entradas de teste alcançaria a MELHOR equivalência de cobertura de partição? 
                     </td>
                     <tr>
                         <td><input type="radio" name="21A" value="a" /> </td>
                         <td>A)</td>
-                        <td>A declareção e verdadeira. Qualquer caso de teste único fornece 100% de cobertura de decisão
-                            e, portanto, 50% de cobertura de decisão.</td>
+                        <td>0, 1000, 2000, 3000, 4000</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="21A" value="b" /> </td>
                         <td>B)</td>
-                        <td>A afirmação e verdadeira. Qualquer caso isolado de teste faria com que o resultado da
-                            declareção "se" fosse verdadeiro ou falso.</td>
+                        <td>1000, 2001, 4000, 4001, 6000</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="21A" value="c" /> </td>
                         <td>C)</td>
-                        <td>A afirmação e falsa. Um único caso de teste so pode garantir uma cobertura de decisão de
-                            25% neste caso.</td>
+                        <td>123, 2345, 3456, 4567, 5678</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="21A" value="d" /></td>
                         <td>D)</td>
-                        <td>A afirmação e falsa. A declareção é muito ampla. Ela pode estar correta ou não, dependendo
-                            do software testado.</td>
+                        <td>666, 999, 2222, 5555, 6666</td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -848,135 +846,33 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 22</h3>
-                        <span>Qual das seguintes e a descrição da cobertura das declarações?
+                        <span>Um gravador de radiação diário para plantas produz uma pontuação de luz solar baseada na combinação 
+                            do número de horas que uma planta está exposta ao sol (abaixo de 3 horas, 3 a 6 horas ou acima de 
+                            6 horas) e a intensidade média da luz solar (muito baixa, baixa, média, alta).
                         </span>
+                        <p>Dados os seguintes casos de teste:</p>
+                        <p style="text-align:center;"><img src="questaoB22.png"></p>
+                        <p>Qual é o número mínimo de casos de teste adicionais que são necessários para garantir a cobertura total 
+                            de TODAS as partições de equivalência de entrada válida?
+                        </p>
                     </td>
                     <tr>
                         <td><input type="radio" name="22A" value="a" /> </td>
                         <td>A)</td>
-                        <td>E uma métrica, que e a porcentagem de casos de teste que foram executados</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="22A" value="b" /> </td>
                         <td>B)</td>
-                        <td>E uma métrica, que e a porcentagem de declarações no código fonte que foram executadas</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="22A" value="c" /> </td>
                         <td>C)</td>
-                        <td>E uma métrica, que e o número de declarações no código fonte que foram executadas por casos
-                            de teste que são aprovados</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="22A" value="d" /></td>
-                        <td>D)</td>
-                        <td>E uma métrica, que da uma confirmação verdadeira/falsa se todas as declarações são cobertas
-                            ou não.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <hr />
-                        </td>
-                    </tr>
-                    <!-- ------------------------------------------------ -->
-                    <td colspan="3">
-                        <h3>Questão 23</h3>
-                        <span>Qual declareção sobre a relação entre a cobertura de declarações e a cobertura de decisões
-                            e verdadeira?
-                        </span>
-                    </td>
-                    <tr>
-                        <td><input type="radio" name="23A" value="a" /> </td>
-                        <td>A)</td>
-                        <td>100% de cobertura de decisão também garante 100% de cobertura de declareção</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="23A" value="b" /> </td>
-                        <td>B)</td>
-                        <td>100% de cobertura de declareção também garante 100% de cobertura de decisão.</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="23A" value="c" /> </td>
-                        <td>C)</td>
-                        <td>50% de cobertura de decisão também garante 50% de cobertura de declareção.</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="23A" value="d" /></td>
-                        <td>D)</td>
-                        <td>A cobertura de decisão nunca pode chegar a 100%.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <hr />
-                        </td>
-                    </tr>
-                    <!-- ------------------------------------------------ -->
-                    <td colspan="3">
-                        <h3>Questão 24</h3>
-                        <span>Para qual das seguintes situações é adequado o teste exploratório?
-                        </span>
-                    </td>
-                    <tr>
-                        <td><input type="radio" name="24A" value="a" /> </td>
-                        <td>A)</td>
-                        <td>Quando a pressão do tempo requer a aceleração da execução de testes já especificados</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="24A" value="b" /> </td>
-                        <td>B)</td>
-                        <td>Quando o sistema e desenvolvido de forma incremental, e não há carta de teste disponível.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="24A" value="c" /> </td>
-                        <td>C)</td>
-                        <td>Quando houver testadores disponíveis que tenham conhecimento suficiente de aplicações e
-                            tecnologias similares.</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="24A" value="d" /></td>
-                        <td>D)</td>
-                        <td>Quando já existe um conhecimento avançado do sistema, e é necessário fornecer provas de que
-                            ele deve ser testado intensivamente.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <hr />
-                        </td>
-                    </tr>
-                    <!-- ------------------------------------------------ -->
-                    <td colspan="3">
-                        <h3>Questão 25</h3>
-                        <span> O bônus de um funcionário deve ser calculado. Não pode ser negativo, mas pode ser
-                            calculado até zero. O bônus e baseado na duração do emprego:<br>
-                            <ul>
-                                <li>menor ou igual a 2 anos</li>
-                                <li>mais de 2 anos, mas menos de 5 anos</li>
-                                <li>5 a 10 anos, inclusive</li>
-                                <li>mais de 10 anos</li>
-                            </ul>
-                            <p></p>
-                            Qual e o número mínimo de casos de teste necessário para cobrir todas as partições de
-                            equivalência válidas para o cálculo do bônus?
-                        </span>
-                    </td>
-                    <tr>
-                        <td><input type="radio" name="25A" value="a" /> </td>
-                        <td>A)</td>
                         <td>3</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" name="25A" value="b" /> </td>
-                        <td>B)</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="25A" value="c" /> </td>
-                        <td>C)</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="25A" value="d" /></td>
+                        <td><input type="radio" name="22A" value="d" /></td>
                         <td>D)</td>
                         <td>4</td>
                     </tr>
@@ -987,42 +883,153 @@
                     </tr>
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
-                        <h3>Questão 26</h3>
-                        <span>Um sistema de controle de velocidade e relatórios tem as seguintes características:</span>
-                            <p></p>
-                            <ul>
-                                <li>Se você dirigir 50 km/h ou menos, nada vai acontecer.</li>
-                                <li>Se você dirigir mais rápido que 50 km/h, mas não mais que 55 km/h, você será avisado.</li>
-                                <li>Se você dirigir mais rápido que 55 km/h, mas não mais que 60 km/h, você será multado.</li>
-                                <li>Se você dirigir a mais de 60 km/h, sua carteira de habilitaçao será suspensa. - A
-                                    velocidade em km/h está disponível para o sistema como um valor inteiro.</li>
-                            </ul>
-                            <p>
-                            Qual seria o conjunto mais provável de valores (km/h) identificado pela aplicação da análise
-                            de valores limite, onde apenas os valores nos limites das classes de
-                            equivalência são selecionados?
+                        <h3>Questão 23</h3>
+                        <span>Um aplicativo doméstico inteligente mede a temperatura média na casa durante a 
+                            semana anterior e fornece feedback aos ocupantes sobre sua compatibilidade ambiental 
+                            com base nessa temperatura.
+                        </span>
+                        <p>O feedback para diferentes faixas de temperatura média (para a temperatura mais próxima) deve ser:</p>
+                        <p style="text-align:center;"><img src="questaoB23.png"></p>
+                        <p>Usando BVA (somente valores Min e Max), qual dos seguintes conjuntos de entradas de teste 
+                            fornece o mais alto nível de cobertura de limite?
                         </p>
-                        
+                    </td>
+                    <tr>
+                        <td><input type="radio" name="23A" value="a" /> </td>
+                        <td>A)</td>
+                        <td>0°C, 11°C, 20°C, 22°C, 23°C</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="23A" value="b" /> </td>
+                        <td>B)</td>
+                        <td>9°C, 15°C, 19°C, 23°C, 100°C</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="23A" value="c" /> </td>
+                        <td>C)</td>
+                        <td>10°C, 16°C, 19°C, 22°C, 23°C</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="23A" value="d" /></td>
+                        <td>D)</td>
+                        <td>14°C, 15°C, 18°C, 19°C, 19°C, 21°C, 22°C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr />
+                        </td>
+                    </tr>
+                    <!-- ------------------------------------------------ -->
+                    <td colspan="3">
+                        <h3>Questão 24</h3>
+                        <span>Os testes de tabela de decisão estão sendo realizados em um sistema de multa por 
+                            excesso de velocidade. Dois casos de teste já foram gerados para as regras R1 e R4, 
+                            que são mostradas abaixo:
+                        </span>
+                        <p style="text-align:center;"><img src="questaoB24_01.png"></p>
+                        <p>Dados os seguintes casos de teste adicionais:</p>
+                        <p style="text-align:center;"><img src="questaoB24_02.png"></p>
+                        <p>Quais dos dois casos de teste adicionais alcançariam cobertura total da tabela de 
+                            decisão completa (quando combinados com os casos de teste que já foram gerados para 
+                            as regras R1 e R4)?
+                        </p>
+                    </td>
+                    <tr>
+                        <td><input type="radio" name="24A" value="a" /> </td>
+                        <td>A)</td>
+                        <td>DT1, DT2</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="24A" value="b" /> </td>
+                        <td>B)</td>
+                        <td>DT2, DT3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="24A" value="c" /> </td>
+                        <td>C)</td>
+                        <td>DT2, DT4</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="24A" value="d" /></td>
+                        <td>D)</td>
+                        <td>DT3, DT4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr />
+                        </td>
+                    </tr>
+                    <!-- ------------------------------------------------ -->
+                    <td colspan="3">
+                        <h3>Questão 25</h3>
+                        <span>Dado o seguinte modelo de estado de um software carregador de bateria:
+                        </span>
+                        <p style="text-align:center;"><img src="questaoB25.png"></p>
+                        <p>Qual das seguintes sequências de transições proporciona o mais alto nível 
+                            de cobertura de transição para o modelo?
+                        </p>
+                    </td>
+                    <tr>
+                        <td><input type="radio" name="25A" value="a" /> </td>
+                        <td>A)</td>
+                        <td>OFF → WAIT → OFF → WAIT → TRICKLE → CHARGE → HIGH → CHARGE → LOW
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="25A" value="b" /> </td>
+                        <td>B)</td>
+                        <td>WAIT → TRICKLE → WAIT → OFF → WAIT → TRICKLE → CHARGE → LOW → CHARGE </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="25A" value="c" /> </td>
+                        <td>C)</td>
+                        <td>HIGH → CHARGE → LOW → CHARGE → TRICKLE → WAIT → TRICKLE → WAIT → TRICKLE</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="25A" value="d" /></td>
+                        <td>D)</td>
+                        <td>WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr />
+                        </td>
+                    </tr>
+                    <!-- ------------------------------------------------ -->
+                    <td colspan="3">
+                        <h3>Questão 26</h3>
+                        <span>Qual das seguintes declarações BEST descreve como os casos de teste são derivados de um caso de uso?</span>
+                        <br>
                     </td>
                     <tr>
                         <td><input type="radio" name="26A" value="a" /> </td>
                         <td>A)</td>
-                        <td>0, 49, 50, 54, 59, 60</td>
+                        <td>Os casos de teste são criados para exercer comportamentos básicos, excepcionais e de erro 
+                            definidos pelo sistema em teste, em colaboração com os atores
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="26A" value="b" /> </td>
                         <td>B)</td>
-                        <td>50, 55, 60</td>
+                        <td>Os casos de teste são derivados da identificação dos componentes incluídos no caso de 
+                            uso e da criação de testes de integração que exercem as interações desses componentes
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="26A" value="c" /> </td>
                         <td>C)</td>
-                        <td>49, 50, 54, 55, 60, 62</td>
+                        <td>Os casos de teste são gerados através da análise das interações dos atores com o 
+                            sistema para garantir que as interfaces do usuário sejam fáceis de usar
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="26A" value="d" /></td>
                         <td>D)</td>
-                        <td>50, 51, 55, 56, 60, 61</td>
+                        <td>D)	Os casos de teste são derivados para exercer cada um dos pontos de decisão 
+                            nos fluxos do processo comercial do caso de uso, para atingir 100% de cobertura 
+                            de decisão desses fluxos
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -1032,33 +1039,34 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 27</h3>
-                        <span>Os funcionários de uma empresa recebem bônus se trabalharem mais de um ano na empresa e
-                            atingirem uma meta que tenha sido acordada individualmente antes.</span>
-                        <p>Estes fatos podem ser mostrados em uma tabela de decisão:</p>
-                        <img src="questao27.png" style="width:880px;height:150px"><br>
-                        <p>Qual dos seguintes casos de teste representa uma situação que pode acontecer na vida real, e
-                            está faltando na tabela de decisão acima?</p>
-                        
+                        <span>Qual das seguintes descrições de cobertura de declarações é CORRETA?</span>
+                        <br>
                     </td>
                     <tr>
                         <td><input type="radio" name="27A" value="a" /> </td>
                         <td>A)</td>
-                        <td>condição1 = SIM, condição2 = não, Condição3 = SIM, Ação = NÃO</td>
+                        <td>A cobertura de declaração é uma medida do número de linhas de código fonte exercidas por testes</td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="27A" value="b" /> </td>
                         <td>B)</td>
-                        <td>condição1 = SIM, condição2 = SIM, Condição3 = NÃO, Ação = SIM</td>
+                        <td>A cobertura das declarações é uma medida da proporção de declarações 
+                            executáveis no código fonte exercida por testes
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="27A" value="c" /> </td>
                         <td>C)</td>
-                        <td>condição1 = não, condição2 = não, Condição3 = SIM, Ação= NÃO</td>
+                        <td>A cobertura de declaração é uma medida da porcentagem de linhas 
+                            de código fonte (sem comentários) exercida por testes
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="27A" value="d" /></td>
                         <td>D)</td>
-                        <td>condição1 = não, condição2 = SIM, Condição3 = NÃO, Ação= NÃO</td>
+                        <td>A cobertura das declarações é uma medida do número de declarações 
+                            executáveis no código fonte exercido por testes
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -1068,35 +1076,35 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 28</h3>
-                        <span>Qual das seguintes afirmações sobre o diagrama de transição de estado dado e tabela de
-                            casos de teste é VERDADEIRA?</span><br>
-                        <p style="text-align-last:center;">
-                        <img src="questao28.png" style="height:350px;width:700px;">
-                        </p>
+                        <span>Qual das seguintes descrições de cobertura de decisão é CORRETA?</span><br>
                     </td>
                     <tr>
                         <td><input type="radio" name="28A" value="a" /> </td>
                         <td>A)</td>
-                        <td>Os casos de teste em Questão cobrem transições válidas e inválidas no diagrama de transição
-                            estatal</td>
+                        <td>A cobertura de decisão é uma medida da porcentagem de caminhos possíveis 
+                            através do código fonte exercida por testes
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="28A" value="b" /> </td>
                         <td>B)</td>
-                        <td>Os casos de teste em Questão representam todas as transições válidas possíveis no diagrama
-                            de transição estatal</td>
+                        <td>A cobertura de decisão é uma medida da porcentagem dos fluxos comerciais 
+                            através do componente exercido por testes
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="28A" value="c" /> </td>
                         <td>C)</td>
-                        <td>Os casos de teste em Questão representam algumas das transições válidas no diagrama de
-                            transição estatal</td>
+                        <td>A cobertura de decisão é uma medida das declarações "se" no código que são 
+                            exercidas tanto com os resultados verdadeiros como falsos
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="28A" value="d" /></td>
                         <td>D)</td>
-                        <td>Os casos de teste em Questão representam pares de transições no diagrama de transição
-                            estatal</td>
+                        <td>A cobertura de decisão é uma medida da proporção de resultados de decisão no 
+                            código fonte exercida por testes
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -1106,40 +1114,35 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 29</h3>
-                        <span>Uma aplicação de vídeo tem a seguinte exigência: O aplicativo deve permitir a reprodução
-                            de um vídeo na seguinte resolução de tela:</span><br>
-                            <ul>
-                                <li>640x480</li>
-                                <li>1280x720</li>
-                                <li>1600x1200</li>
-                                <li>1920x1080</li>
-                            </ul>
-                            <p>Qual dos seguintes casos de teste e resultado da aplicação da técnicade teste de
-                            equivalência de partição para testar este requisito?</p>
+                        <span>Qual dos seguintes itens descreve MELHOR o conceito por trás da adivinhação de erros?</span><br>
                     </td>
                     <tr>
                         <td><input type="radio" name="29A" value="a" /> </td>
                         <td>A)</td>
-                        <td>Verificar se a aplicação pode reproduzir um vídeo em uma tela de tamanho 1920x1080 (1 caso
-                            de teste)</td>
+                        <td>Adivinhação de erro requer que você imagine que é o usuário do objeto de teste e adivinhe 
+                            os erros que o usuário poderia cometer ao interagir com ele
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="29A" value="b" /> </td>
                         <td>B)</td>
-                        <td>Verificar se a aplicação pode reproduzir um vídeo em um display de tamanho 640x480 e
-                            1920x1080 (2 casos de teste)</td>
+                        <td>A adivinhação de erros envolve o uso de sua experiência pessoal de desenvolvimento 
+                            e os erros que você cometeu como desenvolvedor
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="29A" value="c" /> </td>
                         <td>C)</td>
-                        <td>Verificar se a aplicação pode reproduzir um vídeo em cada um dos tamanhos de exibição na
-                            exigência (4 casos de teste)</td>
+                        <td>A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos 
+                            encontrados no passado e erros típicos cometidos pelos desenvolvedores
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="29A" value="d" /></td>
                         <td>D)</td>
-                        <td>Verificar se a aplicação pode reproduzir um vídeo em qualquer um dos tamanhos de tela na
-                            exigência (1 caso de teste) TV Off (S 1) TV Play (S 3) TV Stand</td>
+                        <td>D)	A adivinhação de erros exige que você duplique rapidamente a tarefa de 
+                            desenvolvimento para identificar o tipo de erros que um desenvolvedor pode cometer
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -1149,34 +1152,39 @@
                     <!-- ------------------------------------------------ -->
                     <td colspan="3">
                         <h3>Questão 30</h3>
-                        <span>Qual das seguintes declarações MELHOR descreve como as tarefas são divididas entre o
-                            gerente de testes e o testador?
-                        </span>
+                        <span>Qual dos seguintes explica MELHOR um benefício dos testes independentes?</span>
                     </td>
                     <tr>
                         <td><input type="radio" name="30A" value="a" /> </td>
                         <td>A)</td>
-                        <td>O gerente de testes planejá as atividades de teste e escolhe os padrões a serem seguidos,
-                            enquanto o testador escolhe as ferramentas e estabelece as diretrizes de
-                            uso das ferramentas</td>
+                        <td>O uso de uma equipe de teste independente permite que a gerência do projeto atribua a 
+                            responsabilidade pela qualidade da entrega final à equipe de teste, garantindo assim que todos 
+                            estejam cientes de que a qualidade é responsabilidade geral da equipe de teste
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="30A" value="b" /> </td>
                         <td>B)</td>
-                        <td>O gerente de testes planejá, coordena e controla as atividades de teste, enquanto o testador
-                            automatiza os testes</td>
+                        <td>Se uma equipe de teste externa à organização pode ser proporcionada, então há benefícios 
+                            distintos em termos de esta equipe externa não ser tão facilmente influenciada pelas 
+                            preocupações de entrega do gerenciamento do projeto e pela necessidade de cumprir prazos de entrega rígidos
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="30A" value="c" /> </td>
                         <td>C)</td>
-                        <td>O gerente de testes planejá, monitora e controla as atividades de teste, enquanto o testador
-                            projeta os testes e decide sobre a liberação do objeto de teste</td>
+                        <td>Uma equipe de teste independente pode trabalhar totalmente separada dos desenvolvedores, não 
+                            precisa se distrair com a mudança dos requisitos do projeto e pode restringir a comunicação com 
+                            os desenvolvedores a relatórios de defeitos através do sistema de gerenciamento de defeitos
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="30A" value="d" /></td>
                         <td>D)</td>
-                        <td>O gerente de testes planejá e organiza os testes e especifica os casos de teste, enquanto o
-                            testador executa os testes</td>
+                        <td>Quando as especificações contêm ambiguidades e inconsistências, são feitas suposições sobre 
+                            sua interpretação, e um testador independente pode ser útil para questionar essas suposições e a 
+                            interpretação feita pelo desenvolvedor
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="3">
