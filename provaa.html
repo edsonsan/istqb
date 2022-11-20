@@ -34,6 +34,7 @@
                 height:570px; overflow-y:scroll ; padding: 10px;">
             <br />
             <form action="#" method="post">
+                <fieldset id="perguntas">
                 <table>
                     <tr>
                         <td colspan="3">
@@ -2052,6 +2053,7 @@
                     document.getElementById("condicao_aprovado").innerHTML="";
                 }
                 document.getElementById("botao").disabled=true;
+                document.getElementById("perguntas").disabled = true;
                 console.log("Total de acertos: " + contaQuestao); 
             }
         }
