@@ -33,8 +33,10 @@
         <div style="float:left;border: 2px solid blue;width: 911px;
                 height:570px; overflow-y:scroll ; padding: 10px;">
             <br />
-            <form action="#" method="post">
+            <form action="#" method="post" id="provaB">
+                <fieldset id="perguntas">
                 <table>
+
                     <!-- 1 ------------------------------------------------ -->
                     <tr>
                         <td colspan="3">
@@ -925,6 +927,7 @@
                         </td>
                     </tr>
                     <!-- 22 ------------------------------------------------ -->
+                    <tr>
                     <td colspan="3">
                         <h3>Questão 22</h3>
                         <p>Um gravador de radiação diário para plantas produz uma pontuação de luz solar baseada na
@@ -940,6 +943,7 @@
                             cobertura total de TODAS as partições de equivalência de entrada válida?
                         </p>
                     </td>
+                    </tr>
                     <tr>
                         <td><input type="radio" name="22B" value="a" /> </td>
                         <td>A)</td>
@@ -1687,11 +1691,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="radio" name="40B" value="a" /> </td>
-                        <td>A)</td>
-                        <td>A necessidade de avaliar como a ferramenta se ajusta aos processos e práticas
-                            existentes e determinar o que precisaria mudar
-                        </td>
+                            <td><input type="radio" name="40B" value="a"/> </td>
+                            <td>A)</td>
+                            <td>A necessidade de avaliar como a ferramenta se ajusta aos processos e práticas
+                                existentes e determinar o que precisaria mudar
+                            </td>
                     </tr>
                     <tr>
                         <td><input type="radio" name="40B" value="b" /> </td>
@@ -1717,6 +1721,7 @@
                     <!-- Fim das Questões ------------------------------------------------ -->
                 </table>
                 <p>&nbsp;</p>
+            </fieldset>
             </form>
             <!-- Botão que executa a rotina de aprovação-->
             <button onclick="respostaa()" id="botao">Enviar</button>
@@ -2130,7 +2135,7 @@
                     }
                 }
                 alerta.document.write("</p>");
-                alerta.document.write('<p style="color: red;"> Retorne e marque as questões! </p>')
+                alerta.document.write('<p style="color: red;"> Retorne e marque as pergunta(s)! </p>')
             } else {
                 alerta = window.open("", "Alerta", "width=400,height=245");
                 alerta.close();
@@ -2272,6 +2277,7 @@
                     document.getElementById("condicao_aprovado").innerHTML = "";
                 }
                 document.getElementById("botao").disabled = true;
+                document.getElementById("perguntas").disabled = true;
                 console.log("Total de acertos: " + contaQuestao);
             }
         }
