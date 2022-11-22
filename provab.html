@@ -30,13 +30,11 @@
             <p id="condicao_reprovado" style="color: red;font-weight: bold;"> </p>
         </div>
         <!-- Início das Questões-->
-        <div style="float:left;border: 2px solid blue;width: 911px;
-                height:570px; overflow-y:scroll ; padding: 10px;">
-            <br />
+        <div style="float:left;border: 2px solid blue;width: 926px;
+                height:590px; overflow-y:scroll ; padding: 0px;">
             <form action="#" method="post" id="provaB">
-                <fieldset id="perguntas">
+                <fieldset id="perguntas" style="border:none;">
                 <table>
-
                     <!-- 1 ------------------------------------------------ -->
                     <tr>
                         <td colspan="3">
@@ -1724,7 +1722,9 @@
             </fieldset>
             </form>
             <!-- Botão que executa a rotina de aprovação-->
-            <button onclick="respostaa()" id="botao">Enviar</button>
+            <p style="text-align:center;">
+                <button onclick="respostaa()" id="botao" >Enviar</button>
+            </p>
         </div><!-- Fim das Questões-->
         <!-- Início do Gabarito-->
         <div style="float:right;border: 2px solid black;width: 140px;height: 590px;overflow-y:scroll;">
@@ -2125,7 +2125,7 @@
                 alerta = window.open("", "Alerta", "width=400,height=245");
                 alerta.close();
                 alerta = window.open("", "Alerta", "width=400,height=245");
-                alerta.document.writeln("Você não respondeu as questões ");
+                alerta.document.writeln("Você não respondeu a(s) pergunta(s) ");
                 alerta.document.write('<p style="font-size: 20px;">');
                 for (i = 0; i < questNaoRespondidas.length; i++) {
                     if (i < 39) {
@@ -2135,7 +2135,7 @@
                     }
                 }
                 alerta.document.write("</p>");
-                alerta.document.write('<p style="color: red;"> Retorne e marque as pergunta(s)! </p>')
+                alerta.document.write('<p style="color: red;"> Retorne e marque a(s) pergunta(s)! </p>')
             } else {
                 alerta = window.open("", "Alerta", "width=400,height=245");
                 alerta.close();
