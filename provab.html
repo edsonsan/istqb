@@ -893,7 +893,7 @@
                             </p>
                             <p>O feedback para diferentes números de etapas deve ser:</p>
                             <p style="text-align:center;">
-                                <img src="questaoB21.png">
+                                <img src="img/questaoB21.png">
                             </p>
                             <p>Qual dos seguintes conjuntos de entradas de teste alcançaria a MELHOR equivalência de
                                 cobertura de partição?
@@ -935,7 +935,7 @@
                         <p>
                         <p>Dados os seguintes casos de teste:</p>
                         <p style="text-align:center;">
-                            <img src="questaoB22.png">
+                            <img src="img/questaoB22.png">
                         </p>
                         <p>Qual é o número mínimo de casos de teste adicionais que são necessários para garantir a
                             cobertura total de TODAS as partições de equivalência de entrada válida?
@@ -979,7 +979,7 @@
                                 deve
                                 ser:</p>
                             <p style="text-align:center;">
-                                <img src="questaoB23.png">
+                                <img src="img/questaoB23.png">
                             </p>
                             <p>Usando BVA (somente valores Min e Max), qual dos seguintes conjuntos de entradas de teste
                                 fornece o mais alto nível de cobertura de limite?
@@ -1020,11 +1020,11 @@
                                 que são mostradas abaixo:
                             </p>
                             <p style="text-align:center;">
-                                <img src="questaoB24_01.png">
+                                <img src="img/questaoB24_01.png">
                             </p>
                             <p>Dados os seguintes casos de teste adicionais:</p>
                             <p style="text-align:center;">
-                                <img src="questaoB24_02.png">
+                                <img src="img/questaoB24_02.png">
                             </p>
                             <p>Quais dos dois casos de teste adicionais alcançariam cobertura total da tabela de
                                 decisão completa (quando combinados com os casos de teste que já foram gerados para
@@ -1065,7 +1065,7 @@
                             <p>Dado o seguinte modelo de estado de um software carregador de bateria:
                             </p>
                             <p style="text-align:center;">
-                                <img src="questaoB25.png" style="height:220px;width:400px;">
+                                <img src="img/questaoB25.png" height="220" width="400">
                             </p>
                             <p>Qual das seguintes sequências de transições proporciona o mais alto nível
                                 de cobertura de transição para o modelo?
@@ -1395,7 +1395,7 @@
                             <h3>Questão 33</h3>
                             <p>Dadas as seguintes prioridades e dependências para estes casos de teste:</p>
                             <p style="text-align:center;">
-                                <img src="questaoB33.png">
+                                <img src="img/questaoB33.png">
                             </p>
                             <p>Qual dos seguintes cronogramas de execução de testes BEST considera as
                                 prioridades e dependências técnicas e lógicas?
@@ -2121,26 +2121,25 @@
                 }
             }
             // Pop-UP informando as Questões não respondidas
+            let alerta = null;
             if (questNaoRespondidas.length > 0) {
-                alerta = window.open("", "Alerta", "width=400,height=245");
-                alerta.close();
-                alerta = window.open("", "Alerta", "width=400,height=245");
-                alerta.document.writeln("Você não respondeu a(s) pergunta(s) ");
-                alerta.document.write('<p style="font-size: 20px;">');
-                for (i = 0; i < questNaoRespondidas.length; i++) {
-                    if (i < 39) {
-                        alerta.document.writeln(" " + questNaoRespondidas[i] + " - ");
-                    } else {
-                        alerta.document.writeln(" " + questNaoRespondidas[i] + " ");
+                    alerta = window.open("", "Alerta", "width=400,height=245");
+                    alerta.close();
+                    alerta = window.open("", "Alerta", "width=400,height=245");
+                    alerta.document.writeln("Você não respondeu a(s) pergunta(s) ");
+                    alerta.document.write('<p style="font-size: 20px;">');
+                    for (i = 0; i < questNaoRespondidas.length; i++) {
+                        if (i < 39) {
+                            alerta.document.writeln(" " + questNaoRespondidas[i] + " - ");
+                        } else {
+                            alerta.document.writeln(" " + questNaoRespondidas[i] + " ");
+                        }
                     }
-                }
-                alerta.document.write("</p>");
-                alerta.document.write('<p style="color: red;"> Retorne e marque a(s) pergunta(s)!&nbsp;&nbsp;'+  
+                    alerta.document.write("</p>");
+                    alerta.document.write('<p style="color: red;"> Retorne e marque a(s) pergunta(s)!&nbsp;&nbsp;'+  
                     '<button onclick="javascript:window.close()" style="background-color:red; border-color:red; color:white">Fechar</button> </p>');
-            } else {
-                alerta = window.open("", "Alerta", "width=400,height=245");
-                alerta.close();
-                // Fim das atribuições das variáveis auxiliares
+                }else{ 
+            // Fim das atribuições das variáveis auxiliares
                 for (var i = 0; i < 40; i++) {
                     if (i == 0 && conjuntResultado[i] == "b") { //01
                         contaQuestao = contaQuestao + 1;
@@ -2263,6 +2262,8 @@
                         contaQuestao = contaQuestao + 1;
                     }
                 }
+                alerta = window.open("", "Alerta", "width=400,height=245");
+                alerta.close();
                 // Fim do For
                 // Verifica se o canditado está aprovado ou reprovado
                 porcentagem = 100 - (((totalQuestoes - contaQuestao) / totalQuestoes) * 100).toFixed(2);
